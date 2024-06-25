@@ -38,13 +38,13 @@ wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmo
 wget https://github.com/t2015q/bbrplus/raw/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm
 
 
-wget https://github.com/t2015q/bbrplus/raw/master/Debian9/x86_64/kernel-4.14.129-bbrplus.rpm  
+wget https://github.com/t2015q/bbrplus/raw/master/Debian9/x86_64/linux-image-4.14.129-bbrplus.deb
 
 4.  
 安装内核  
 yum install -y kernel-4.14.129-bbrplus.rpm
 
-apt install -y kernel-4.14.129-bbrplus.rpm
+apt install -y linux-image-4.14.129-bbrplus.deb
 
 6.  
 切换启动内核  
