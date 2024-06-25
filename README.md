@@ -35,27 +35,32 @@ wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmo
 
 2.  
 下载内核  
-wget https://github.com/cx9208/bbrplus/raw/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm  
-
-3.  
-安装内核  
-yum install -y kernel-4.14.129-bbrplus.rpm  
+wget https://github.com/t2015q/bbrplus/raw/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm
+wget https://github.com/t2015q/bbrplus/raw/master/Debian9/x86_64/kernel-4.14.129-bbrplus.rpm  
 
 4.  
-切换启动内核  
-grub2-set-default 'CentOS Linux (4.14.129-bbrplus) 7 (Core)'  
+安装内核  
+yum install -y kernel-4.14.129-bbrplus.rpm
 
-5.  
+apt install -y kernel-4.14.129-bbrplus.rpm
+
+6.  
+切换启动内核  
+grub2-set-default 'CentOS Linux (4.14.129-bbrplus) 7 (Core)'
+
+grub2-set-default 'Ubuntu Linux (4.14.129-bbrplus) 7 (Core)'
+
+8.  
 设置fq  
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf  
 设置bbrplus  
 echo "net.ipv4.tcp_congestion_control=bbrplus" >> /etc/sysctl.conf  
 
-6.  
+9.  
 重启  
 reboot  
 
-7.
+10.
 检查内核版本  
 uname -r  
 显示4.14.129-bbrplus则成功  
