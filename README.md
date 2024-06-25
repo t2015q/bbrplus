@@ -36,6 +36,8 @@ wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmo
 2.  
 下载内核  
 wget https://github.com/t2015q/bbrplus/raw/master/centos7/x86_64/kernel-4.14.129-bbrplus.rpm
+
+
 wget https://github.com/t2015q/bbrplus/raw/master/Debian9/x86_64/kernel-4.14.129-bbrplus.rpm  
 
 4.  
