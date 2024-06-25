@@ -44,7 +44,7 @@ wget https://github.com/t2015q/bbrplus/raw/master/Debian9/x86_64/linux-image-4.1
 安装内核  
 yum install -y kernel-4.14.129-bbrplus.rpm
 
-apt install -y linux-image-4.14.129-bbrplus.deb
+apt install -y ./linux-image-4.14.129-bbrplus.deb
 
 6.  
 切换启动内核  
